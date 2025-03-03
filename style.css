@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;600&display=swap');
+
+body {
+    background-color: #f5f5eb; /* Light beige background */
+    font-family: 'Arial', sans-serif;
+}
+
+.highlight {
+    color: green;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.hire-btn {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 18px;
+    margin-top: 20px;
+    transition: background 0.3s ease-in-out;
+}
+
+.hire-btn:hover {
+    background-color: darkgreen;
+}
