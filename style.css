@@ -83,3 +83,42 @@
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
+
+
+/*contact*/
+.contact-body {
+    background-color: #b3d4a1; /* Light green background */
+    font-family: 'Playfair Display', serif;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #b3d4a1;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-container h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.contact-highlight {
+    position: relative;
+    display: inline-block;
+}
+
+.contact-highlight::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 10px;
+    background-color: rgba(0, 128, 0, 0.3); /* Green highlight */
+    z-index: -1;
+    border-radius: 5px;
+}
