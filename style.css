@@ -24,18 +24,19 @@
 }
 
 .hire-btn:hover {
-    background-color: darkgreen;
+    background-color: rgb(112, 170, 112);
 }
 
 /*Education*/
 .education-body {
     background-color: #b3d4a1; /* Your given background color */
-    font-family: 'Arial', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .education-title {
     font-size: 32px;
     font-weight: bold;
+    font-family: 'Playfair Display', serif;
 }
 
 .education-title span {
@@ -62,4 +63,23 @@
 .education-img {
     border: 3px solid purple;
     border-radius: 10px;
+}
+
+
+/*Projects*/
+
+.project-card img {
+    height: 200px;  /* Set fixed height */
+    width: 100%;    /* Ensures images stretch to card width */
+    object-fit: cover; /* Ensures the image fits without distortion */
+    border-radius: 5px;
+}
+
+.project-card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
