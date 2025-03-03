@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;600&display=swap');
 
-body {
+/*Home page*/
+.home-body  {
     background-color: #f5f5eb; /* Light beige background */
     font-family: 'Arial', sans-serif;
 }
@@ -24,4 +25,41 @@ body {
 
 .hire-btn:hover {
     background-color: darkgreen;
+}
+
+/*Education*/
+.education-body {
+    background-color: #b3d4a1; /* Your given background color */
+    font-family: 'Arial', sans-serif;
+}
+
+.education-title {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.education-title span {
+    text-decoration: underline;
+    color: green;
+}
+
+.education-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.education-list li {
+    font-size: 18px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.education-list span {
+    color: gray;
+    font-size: 16px;
+}
+
+.education-img {
+    border: 3px solid purple;
+    border-radius: 10px;
 }
