@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const sidebar = document.querySelector(".sidebar");
 
     sidebarToggle.addEventListener("click", function () {
-        sidebar.classList.toggle("active"); 
+        sidebar.classList.toggle("collapsed"); // Toggle collapsed class
     });
 });
 
