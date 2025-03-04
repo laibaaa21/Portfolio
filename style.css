@@ -96,6 +96,74 @@
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+/*Skills*/
+.skills-body {
+    background-color: #f5f5eb;
+    padding: 40px 0;
+}
+
+.skills-title {
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+
+.skills-title span {
+    text-decoration: underline;
+    color: green;
+}
+
+/* Progress Bar Animation */
+.progress-bar {
+    width: 0%;
+    transition: width 2s ease-in-out;
+}
+
+/* Delay each bar to create a cascading effect */
+.unity-bar {
+    animation: fillAnimation 2s ease-in-out forwards 0.2s;
+}
+
+.opencv-bar {
+    animation: fillAnimation 2s ease-in-out forwards 0.4s;
+}
+
+.photoshop-bar {
+    animation: fillAnimation 2s ease-in-out forwards 0.6s;
+}
+
+.audacity-bar {
+    animation: fillAnimation 2s ease-in-out forwards 0.8s;
+}
+
+.problem-solving-bar {
+    animation: fillAnimation 2s ease-in-out forwards 1s;
+}
+
+.adaptability-bar {
+    animation: fillAnimation 2s ease-in-out forwards 1.2s;
+}
+
+/* Keyframes for Animation */
+@keyframes fillAnimation {
+    from {
+        width: 0%;
+    }
+    to {
+        width: var(--final-width);
+    }
+}
+
+/* Define final width values for each progress bar */
+.unity-bar { --final-width: 80%; }
+.opencv-bar { --final-width: 60%; }
+.photoshop-bar { --final-width: 90%; }
+.audacity-bar { --final-width: 100%; }
+.problem-solving-bar { --final-width: 85%; }
+.adaptability-bar { --final-width: 100%; }
+
+
 
 /*contact*/
 .contact-body {
