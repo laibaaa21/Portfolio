@@ -16,3 +16,12 @@ document.addEventListener("DOMContentLoaded", function () {
         form.classList.add("was-validated");
     });
 });
+document.addEventListener("DOMContentLoaded", function () {
+    const sidebarToggle = document.querySelector(".sidebar-toggle");
+    const sidebar = document.querySelector(".sidebar");
+
+    sidebarToggle.addEventListener("click", function () {
+        sidebar.classList.toggle("active"); 
+    });
+});
+
