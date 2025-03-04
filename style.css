@@ -217,3 +217,64 @@
 .navbar-nav .nav-link:hover {
     color: #f39c12;
 }
+
+
+/* Sidebar Styling */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #222;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.profile a {
+    color: #f39c12;
+    text-decoration: none;
+}
+
+.profile a:hover {
+    text-decoration: underline;
+}
+
+/* Main content adjustment */
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+/* Sidebar toggle button for mobile */
+.sidebar-toggle {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1050;
+}
+
+/* Responsive behavior */
+@media (max-width: 992px) {
+    .sidebar {
+        display: none;
+        width: 250px;
+        position: fixed;
+        z-index: 1000;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+}
