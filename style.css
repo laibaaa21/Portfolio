@@ -49,7 +49,7 @@
 
 /* Education Section */
 .education-body {
-    background-color: #b3d4a1; /* Light green background */
+    background-color: #ffffff; /* Light green background */
     font-family: 'Montserrat', sans-serif;
     padding: 40px 0;
 }
@@ -60,10 +60,6 @@
     font-family: 'Playfair Display', serif;
 }
 
-.education-title span {
-    text-decoration: underline;
-    color: green;
-}
 
 /* Bootstrap Table Customization */
 .table-dark th {
@@ -104,7 +100,11 @@
     flex-wrap: wrap;
     gap: 20px; /* Adds space between project cards */
 }
-
+.projects-title {
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+}
 #projects {
     text-align: center;
     padding: 100px 0;
@@ -112,7 +112,7 @@
 
 /*Skills*/
 .skills-body {
-    background-color: #f5f5eb;
+    background-color: #ffffff;
     padding: 40px 0;
 }
 
@@ -123,10 +123,7 @@
     text-align: center;
 }
 
-.skills-title span {
-    text-decoration: underline;
-    color: green;
-}
+
 
 /* Progress Bar Animation */
 .progress-bar {
@@ -181,7 +178,7 @@
 
 /*contact*/
 .contact-body {
-    background-color: #b3d4a1; /* Light green background */
+    background-color: #ffffff; /* Light green background */
     font-family: 'Playfair Display', serif;
 }
 
@@ -225,7 +222,7 @@
       width: calc(100% - 250px); /* Adjust if you have a sidebar */
       top: 0;
       left: 250px;
-      background: #1e1e1e;
+      background:#435f35;
       z-index: 999;
       box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
       display: flex;
@@ -234,34 +231,33 @@
       box-sizing: border-box;
     }
   }
-
-.navbar-nav .nav-link:hover {
+  
+  .navbar-nav .nav-link:hover {
     color: green;
   }
-
-@media (max-width: 992px) {
-    /* Mobile nav styled to slide down from the top */
+  
+  /* Mobile nav styled to slide down from the top (for widths below 993px) */
+  @media (max-width: 992px) {
     .mobile-nav {
       position: fixed !important;
       top: -250px !important;  /* Adjust this value if your nav height differs */
       left: 0 !important;
       width: 100% !important;
-      background: #1e1e1e !important;
+      background: #435f35 !important; 
       transition: top 0.3s ease-in-out !important;
       z-index: 1040 !important;
     }
-
-    
+  
     /* When the menu is open, slide it down into view */
     .mobile-nav.show {
       top: 0 !important;
     }
-    
+  
     /* Maintain smooth transition during collapsing state */
     .mobile-nav.collapsing {
       transition: top 0.3s ease-in-out !important;
     }
-    
+  
     /* Position the toggler button at the top right */
     .navbar-toggler {
       position: fixed;
@@ -269,27 +265,34 @@
       right: 10px;
       z-index: 1050;
     }
-    
+  
     /* Stack the nav links vertically */
     .navbar-nav {
       flex-direction: column;
       align-items: flex-start;
     }
+  
     .navbar-nav .nav-item {
       width: 100%;
     }
+  
     .navbar-nav .nav-link {
       padding: 10px 20px;
     }
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='black' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+      }
+      
   }
+  
   
 /* Sidebar Styling */
 .sidebar {
     position: fixed;
     width: 250px;
    
-    background-color: #343a40;
-    color: white;
+    background-color: #b3d4a1;
+    color: rgb(3, 2, 2);
     top: 0;
     left: 0;
     overflow-y: auto;
