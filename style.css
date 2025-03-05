@@ -217,6 +217,28 @@
     border-radius: 5px;
 }
 
+/*navbar*/
+/* Desktop Navbar (for widths above 992px) */
+@media (min-width: 993px) {
+    .navbar {
+      position: fixed;
+      width: calc(100% - 250px); /* Adjust if you have a sidebar */
+      top: 0;
+      left: 250px;
+      background: #1e1e1e;
+      z-index: 999;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      display: flex;
+      align-items: center;
+      padding: 15px 20px;
+      box-sizing: border-box;
+    }
+  }
+
+.navbar-nav .nav-link:hover {
+    color: green;
+  }
+
 @media (max-width: 992px) {
     /* Mobile nav styled to slide down from the top */
     .mobile-nav {
@@ -228,6 +250,7 @@
       transition: top 0.3s ease-in-out !important;
       z-index: 1040 !important;
     }
+
     
     /* When the menu is open, slide it down into view */
     .mobile-nav.show {
