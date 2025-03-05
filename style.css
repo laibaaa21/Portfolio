@@ -95,6 +95,20 @@
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
+.project-.row {
+    margin-left: 0 auto;  /* Moves everything slightly to the right */
+}
+.projects-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Adds space between project cards */
+}
+
+#projects {
+    text-align: center;
+    padding: 100px 0;
+}
 
 /*Skills*/
 .skills-body {
@@ -173,7 +187,7 @@
 
 .contact-container {
     max-width: 600px;
-    margin: 50px auto;
+    margin: 100px auto;
     background: #b3d4a1;
     padding: 30px;
     border-radius: 10px;
