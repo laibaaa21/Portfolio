@@ -131,7 +131,7 @@
 /* Progress Bar Animation */
 .progress-bar {
     width: 0%;
-    transition: width 2s ease-in-out;
+    animation: fillAnimation 2s ease-in-out infinite alternate;
 }
 
 /* Delay each bar to create a cascading effect */
@@ -187,7 +187,7 @@
 
 .contact-container {
     max-width: 600px;
-    margin: 100px auto;
+    margin: 50px auto ;
     background: #b3d4a1;
     padding: 30px;
     border-radius: 10px;
