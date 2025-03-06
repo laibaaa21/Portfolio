@@ -55,8 +55,7 @@ A fully responsive personal portfolio website showcasing my **skills**, **educat
 7. **Skills Section**
 
    - **Animated progress bars** (CSS keyframes)
-     ![Progress bar](skillbar.gif)
-     ![Cards](hireme.gif)
+     ![Progress bar](skillBar.gif)
    - Bars can expand, stay filled, and contract on a loop
 
 8. **Contact Section**
