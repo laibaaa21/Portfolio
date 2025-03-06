@@ -56,6 +56,7 @@ A fully responsive personal portfolio website showcasing my **skills**, **educat
 
    - **Animated progress bars** (CSS keyframes)
      ![Progress bar](skillbar.gif)
+     
    - Bars can expand, stay filled, and contract on a loop
 
 8. **Contact Section**
